@@ -14,6 +14,8 @@ count = len(vinny_poem)
 j=0
 vovel_letters=set("уеыаоэяиюё")
 new_massive=[]
+
+
 while j<count:
     internal_count=0
     for letter in vinny_poem[j]:
@@ -21,6 +23,7 @@ while j<count:
             internal_count+=1
     new_massive.append(internal_count)    
     j+=1
+    
 
 def check(lst)->list:
     """Принимает на вход список и проверяет, все ли элементы данного списка одинаковые. В зависиости от результата выдает в консоль сообщения"""
